@@ -192,7 +192,7 @@
             name='xJdfEaS' value='' /> <input type='hidden' name='actionType' value='Q2FzZXM=' /> <input type="hidden"
             id="property(module)" value="Cases" /> <input type="hidden" id="dependent_field_values_Cases"
             value="&#x7b;&quot;JSON_VALUES&quot;&#x3a;&#x7b;&#x7d;,&quot;JSON_SELECT_VALUES&quot;&#x3a;&#x7b;&#x7d;,&quot;JSON_MAP_DEP_LABELS&quot;&#x3a;&#x5b;&#x5d;&#x7d;" />
-        <input type='hidden' name='returnURL' value='https&#x3a;&#x2f;&#x2f;rhmnew.vercel.app' />
+        <input type='hidden' name='returnURL' value='&#x2a;' />
         <table border='0' cellspacing='0' class='zsFormClass'>
             <tr>
                 <td colspan='2' class='zsFontClass'><strong>Raise a Ticket</strong></td>
@@ -212,22 +212,20 @@
                         class='manfieldbdr' /></td>
             </tr>
             <tr>
+                <td nowrap class='zsFontClass ' width='25%' align='left'>Category &nbsp;&nbsp;</td>
+                <td align='left' width='75%'><select name='Classification' value='' onchange="setDependent(this, false)"
+                        id='Classification'>
+                        <option value=''>-None-</option>
+                        <option value='Direct Assessment'>Direct Assessment</option>
+                        <option value='PAYE'>PAYE</option>
+                        <option value='Objection'>Objection</option>
+                        <option value='Paytax'>Paytax</option>
+                    </select></td>
+            </tr>
+            <tr>
                 <td nowrap class='zsFontClass ' width='25%' align='left'>Subject&nbsp;&nbsp;</td>
                 <td align='left' width='75%'><input type='text' maxlength='255' name='Subject' value=''
                         class='manfieldbdr' /></td>
-            </tr>
-                <tr>
-                <td nowrap class='zsFontClass ' width='25%' align='left'>Category&nbsp;&nbsp;</td>
-                <td align='left' width='75%'>
-                          <select name="Specs" class='manfieldbdr' id="">
-            <option value="">
-                Direct assessment
-            </option>
-            <option value="">
-                PAYE
-            </option>
-        </select>
-           
             </tr>
             <tr>
                 <td nowrap class='zsFontClass ' width='25%' align='left'>Description &nbsp;&nbsp;</td>
